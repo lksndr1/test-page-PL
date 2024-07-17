@@ -25,7 +25,7 @@ section {
     margin-bottom: 87px;
 }
 
-.nav-menu {
+.header .nav-menu {
     display: flex;
     gap: 24px;
     font-weight: 400;
@@ -39,27 +39,32 @@ a {
     color: inherit;
 }
 
-select {
+.header select {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2b3f5b;
     border: none;
     outline: none;
+    background-color: #f6f5f2;
 }
 
-.programs-select {
+.header .programs-select {
     width: 91px;
 }
 
-.about-us-select {
+.header .about-us-select {
     width: 65px;
 }
 
-.contact-panel {
+.header .contact-panel {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 376px;
 }
 
-.contact-with-us {
+.header .contact-with-us {
     font-weight: 500;
     font-size: 16px;
     line-height: 40px;
@@ -72,8 +77,8 @@ select {
     background: rgba(204, 142, 30, 0.1);
 }
 
-.language-select {
-    width: 34px;
+.header .language-select {
+    width: 44px;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -81,12 +86,15 @@ select {
     text-transform: uppercase;
 }
 
-.theme-switcher {
+.header .theme-switcher {
     display: flex;
     justify-content: space-between;
+    border: none;
+    background-color: #f6f5f2;
+    padding: 0;
 }
 
-.sun-background {
+.header .sun-background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,16 +104,16 @@ select {
     background: #cc8e1e;
 }
 
-.moon {
+.header .moon {
     margin: 8px 8px 8px 7px;
 }
 
-.promotional-packages {
+.section-promotional-packages {
     display: flex;
     margin-bottom: 89px;
 }
 
-.section-1 {
+.section-promotional-packages .packages-deskription {
     padding: 105.9px 129px 105.9px 0;
 }
 
@@ -119,34 +127,35 @@ h5 {
     margin-bottom: 24px;
 }
 
-section .info {
+.section-promotional-packages .info {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 }
 
-.strikethrough {
-    text-decoration: line-through;
-}
-
-.packages-wrapper {
+.section-packages .packages-wrapper {
     display: flex;
     gap: 25px;
 }
 
-.package {
+.section-packages  .package {
     /* width: 413px; */
     border: 1px solid rgba(204, 142, 30, 0.27);
     padding: 24px;
+    background-color: #fff;
 }
 
-.package p {
+.section-packages .package p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 }
 
-.package-heading {
+.section-packages .strikethrough {
+    text-decoration: line-through;
+}
+
+.section-packages .package-heading {
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;
@@ -154,7 +163,7 @@ section .info {
     margin-bottom: 16px;
 }
 
-.package-link {
+.section-packages .package-link {
     line-height: 50px;
     color: #cc8e1e;
     border: 0.50px solid #cc8e1e;
@@ -166,33 +175,33 @@ section .info {
     margin: 16px auto 0;
 }
 
-.slider-form-wrapper {
+.section-promotional-offers .slider-form-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.slider-wrapper {
+.section-promotional-offers .slider-wrapper {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.slider {
+.section-promotional-offers .slider {
     width: 629px;
     overflow: hidden;
 }
 
-.slide {
+.section-promotional-offers .slide {
     margin-bottom: 16px;
     display: none;
 }
 
-.slide.active {
+.section-promotional-offers .slide.active {
     display: block;
 }
 
-.slider h2 {
+.section-promotional-offers .slider h2 {
     font-family: "Oranienbaum", sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -201,7 +210,7 @@ section .info {
     margin-bottom: 16px;
 }
 
-.slider p {
+.section-promotional-offers .slider p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -209,7 +218,7 @@ section .info {
     margin-bottom: 16px;
 }
 
-.slider a {
+.section-promotional-offers .slider a {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -217,7 +226,7 @@ section .info {
     cursor: pointer;
 }
 
-.prev {
+.section-promotional-offers .prev {
     width: 88px;
     height: 88px;
     border-radius: 300px 0 0 300px;
@@ -229,7 +238,7 @@ section .info {
     background-position: center;
 }
 
-.next {
+.section-promotional-offers .next {
     width: 88px;
     height: 88px;
     border-radius: 0 300px 300px 0;
@@ -241,12 +250,12 @@ section .info {
     background-position: center;
 }
 
-.contact-form-wrapper {
+.section-promotional-offers .contact-form-wrapper {
     border: 1px solid rgba(204, 142, 30, 0.27);
     padding: 26px 26px 40px;
 }
 
-form h2 {
+.section-promotional-offers form h2 {
     font-family: "Oranienbaum", sans-serif;
     font-size: 32px;
     line-height: 125%;
@@ -254,16 +263,16 @@ form h2 {
     margin-bottom: 16px;
 }
 
-.contact-form {
+.section-promotional-offers .contact-form {
     display: flex;
     flex-direction: column;
 }
 
-.input-container {
+.section-promotional-offers .input-container {
     position: relative;
 }
 
-.form-input {
+.section-promotional-offers .form-input {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -275,17 +284,17 @@ form h2 {
     background: #f6f5f2;
 }
 
-.form-input:focus {
+.section-promotional-offers .form-input:focus {
     border-color: rgba(204, 142, 30, 0.6);
 }
 
-.form-input::placeholder {
+.section-promotional-offers .form-input::placeholder {
     font-size: 16px;
     line-height: 150%;
     color: #b6bbc3;
 }
 
-.inner-label {
+.section-promotional-offers .inner-label {
     font-size: 10px;
     line-height: 100%;
     color: #646e7c;
@@ -296,11 +305,11 @@ form h2 {
     pointer-events: none;
 }
 
-#middle-container {
+.section-promotional-offers #middle-container {
     margin: 8px 0 8px;
 }
 
-.checkbox {
+.section-promotional-offers .checkbox {
     display: flex;
     gap: 4px;
     font-weight: 400;
@@ -310,7 +319,7 @@ form h2 {
     margin: 16px 0;
 }
 
-.checkbox input {
+.section-promotional-offers .checkbox input {
     width: 24px;
     height: 24px;
     margin: 0;
@@ -318,7 +327,7 @@ form h2 {
     border: 1px solid #b6bbc3;
 }
 
-form button {
+.section-promotional-offers form button {
     width: 100%;
     height: 50px;
     border-radius: 50px;
@@ -331,11 +340,11 @@ form button {
     color: #fff;
 }
 
-.price-list-section {
+.section-price-list {
     margin-bottom: 147.3px;
 }
 
-.price-list {
+.section-price-list .price-list {
     font-family: "Oranienbaum", sans-serif;
     font-weight: 400;
     background: #fff;
@@ -343,12 +352,12 @@ form button {
     padding: 48px 108px;
 }
 
-.list-heading, .list-item {
+.section-price-list .list-heading, .list-item {
     display: flex;
     justify-content: space-between;
 }
 
-.list-heading {
+.section-price-list .list-heading {
     display: flex;
     justify-content: space-between;
     
@@ -360,7 +369,7 @@ form button {
     margin-bottom: 26px;
 }
 
-.list-item {
+.section-price-list .list-item {
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;
@@ -370,11 +379,11 @@ form button {
     margin-bottom: 26px;
 }
 
-.code-name-wrapper {
+.section-price-list .code-name-wrapper {
     display: flex;
 }
 
-.code-item, .price-item {
+.section-price-list .code-item, .price-item {
     text-align: center;
 }
 
@@ -385,7 +394,7 @@ form button {
     width: 197px;
 }
 
-.motto {
+.section-motto {
     display: flex;
     justify-content: center;
     margin-bottom: 160px;
@@ -395,7 +404,7 @@ form button {
     margin-bottom: 116px;
 }
 
-.bg-container {
+.section-map .bg-container {
     display: flex;
     height: 280px;
     background-color: #fff;
@@ -404,18 +413,18 @@ form button {
     align-items: center;
 }
 
-.contact-type {
+.section-map .contact-type {
     font-size: 16px;
     line-height: 150%;
 }
 
-.contact-value {
+.section-map .contact-value {
     font-family: "Oranienbaum", sans-serif;
     font-size: 32px;
     line-height: 110%;
 }
 
-.phone {
+.section-map .phone {
     margin-left: 109.4px;
 }
 
@@ -423,7 +432,7 @@ form button {
     margin: 13px 0 18px;
 }
 
-.addres {
+.section-map .addres {
     display: flex;
     align-items: flex-end;
     color: #fff;
@@ -431,12 +440,12 @@ form button {
     z-index: 1;
 }
 
-.navigation-arrow {
+.section-map .navigation-arrow {
     margin-left: 25px;
     cursor: pointer;
 }
 
-.addres::before {
+.section-map .addres::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -454,11 +463,11 @@ form button {
     margin-bottom: 7px;
 }
 
-.mail {
+.section-map .mail {
     margin-right: 162px;
 }
 
-.socials-icons {
+.section-map .socials-icons {
     display: flex;
     gap: 30px;
     margin-top: 32.6px;
@@ -473,46 +482,46 @@ form button {
     margin-bottom: 53px;
 }
 
-.copyright {
+.footer .copyright {
     width: 295px;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
 }
 
-.copyright img {
+.footer .copyright img {
     margin-top: 15px;
 }
 
-.copy-nav-wrapper {
+.footer .copy-nav-wrapper {
     display: flex;
     gap: 32.8px
 }
 
-.links-row {
+.footer .links-row {
     display: flex;
     gap: 15px;
     color: #cc8e1e;
     margin-bottom: 30px;
 }
 
-.footer-contact {
+.footer .footer-contact {
     display: flex;
     gap: 30px;
     font-size: 14px;
 }
 
-.footer-localization {
+.footer .footer-localization {
     width: 270px;
 }
 
-.footer-socials {
+.footer .footer-socials {
     display: flex;
     gap: 30px;
     margin-top: 15.3px;
 }
 
-.politic {
+.footer .politic {
     display: flex;
     flex-direction: column;
     gap: 15px;
