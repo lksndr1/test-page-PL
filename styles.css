@@ -296,6 +296,56 @@ section .info {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 150%;
     padding-top: 102px;
     margin-bottom: 53px;
+}
+
+.copyright {
+    width: 295px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.copyright img {
+    margin-top: 15px;
+}
+
+.copy-nav-wrapper {
+    display: flex;
+    gap: 32.8px
+}
+
+.links-row {
+    display: flex;
+    gap: 15px;
+    color: #cc8e1e;
+    margin-bottom: 30px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.footer-localization {
+    width: 270px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 30px;
+    margin-top: 15.3px;
+}
+
+.politic {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #cc8e1e;
 }
