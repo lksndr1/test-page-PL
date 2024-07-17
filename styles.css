@@ -7,6 +7,7 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     font-family: "Inter Display", sans-serif;
@@ -130,7 +131,7 @@ section .info {
 }
 
 .package {
-    width: 413px;
+    /* width: 413px; */
     border: 1px solid rgba(204, 142, 30, 0.27);
     padding: 24px;
 }
@@ -154,15 +155,20 @@ section .info {
     color: #cc8e1e;
     border: 0.50px solid #cc8e1e;
     border-radius: 25px;
-    width: 365px;
+    /* width: 365px; */
     height: 50px;
     text-align: center;
     background: rgba(204, 142, 30, 0.1);
     margin: 16px auto 0;
 }
 
+.price-list-section {
+    margin-bottom: 147.3px;
+}
 
 .price-list {
+    font-family: "Oranienbaum", sans-serif;
+    font-weight: 400;
     background: #fff;
     border: 1px solid rgba(204, 142, 30, 0.27);
     padding: 48px 108px;
@@ -173,3 +179,123 @@ section .info {
     justify-content: space-between;
 }
 
+.list-heading {
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    background: #faf4e8;
+    padding: 16px 0px;
+    margin-bottom: 26px;
+}
+
+.list-item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    background: #f1efe9;
+    padding: 8px 0px;
+    margin-bottom: 26px;
+}
+
+.code-name-wrapper {
+    display: flex;
+}
+
+.code-item, .price-item {
+    text-align: center;
+}
+
+.code,
+.code-item,
+.price,
+.price-item {
+    width: 197px;
+}
+
+.motto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+.section-map {
+    margin-bottom: 116px;
+}
+
+.bg-container {
+    display: flex;
+    height: 280px;
+    background-color: #fff;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-type {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.contact-value {
+    font-family: "Oranienbaum", sans-serif;
+    font-size: 32px;
+    line-height: 110%;
+}
+
+.phone {
+    margin-left: 109.4px;
+}
+
+#phone {
+    margin: 13px 0 18px;
+}
+
+.addres {
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.navigation-arrow {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.addres::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 386px;
+    height: 368px;
+    background-image: url('/images/warszawa_map.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#addres {
+    margin-bottom: 7px;
+}
+
+.mail {
+    margin-right: 162px;
+}
+
+.socials-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 32.6px;
+}
+
+.footer {
+    padding-top: 102px;
+    margin-bottom: 53px;
+}
