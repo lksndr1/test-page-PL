@@ -6,6 +6,10 @@ body {
     background: #f6f5f2;
 }
 
+section {
+    margin-bottom: 116px;
+}
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -127,7 +131,7 @@ section .info {
 
 .packages-wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
 }
 
 .package {
@@ -160,6 +164,80 @@ section .info {
     text-align: center;
     background: rgba(204, 142, 30, 0.1);
     margin: 16px auto 0;
+}
+
+.slider-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.slider {
+    width: 629px;
+    overflow: hidden;
+}
+
+.slide {
+    margin-bottom: 16px;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider h2 {
+    font-family: "Oranienbaum", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.slider p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2b3f5b;
+    margin-bottom: 16px;
+}
+
+.slider a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #cc8e1e;
+    cursor: pointer;
+}
+
+.prev {
+    width: 88px;
+    height: 88px;
+    border-radius: 300px 0 0 300px;
+    border: none;
+    backdrop-filter: blur(30px);
+    background: #f1efe9;
+    background-image: url('/images/slider-arrow-prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.next {
+    width: 88px;
+    height: 88px;
+    border-radius: 0 300px 300px 0;
+    border: none;
+    backdrop-filter: blur(30px);
+    background: #f1efe9;
+    background-image: url('/images/slider-arrow-next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .price-list-section {
