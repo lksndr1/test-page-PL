@@ -169,6 +169,7 @@ section .info {
 .slider-form-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .slider-wrapper {
@@ -238,6 +239,96 @@ section .info {
     background-image: url('/images/slider-arrow-next.svg');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.contact-form-wrapper {
+    border: 1px solid rgba(204, 142, 30, 0.27);
+    padding: 26px 26px 40px;
+}
+
+form h2 {
+    font-family: "Oranienbaum", sans-serif;
+    font-size: 32px;
+    line-height: 125%;
+    color: #2b3f5b;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+}
+
+.form-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2b3f5b;
+    width: calc(100% - 35px);
+    border: 1px solid rgba(204, 142, 30, 0.6);
+    border-radius: 10px;
+    padding: 18px 16px 8px;
+    background: #f6f5f2;
+}
+
+.form-input:focus {
+    border-color: rgba(204, 142, 30, 0.6);
+}
+
+.form-input::placeholder {
+    font-size: 16px;
+    line-height: 150%;
+    color: #b6bbc3;
+}
+
+.inner-label {
+    font-size: 10px;
+    line-height: 100%;
+    color: #646e7c;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+#middle-container {
+    margin: 8px 0 8px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2b3f5b;
+    margin: 16px 0;
+}
+
+.checkbox input {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #b6bbc3;
+}
+
+form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 20px;
+    background-color: #cc8e1e;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #fff;
 }
 
 .price-list-section {
