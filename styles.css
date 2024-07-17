@@ -11,10 +11,27 @@ section {
 }
 
 .container {
-    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     font-family: "Inter Display", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 10px;
+    }
 }
 
 .header {
@@ -108,6 +125,22 @@ a {
     margin: 8px 8px 8px 7px;
 }
 
+@media (max-width: 769px) {
+    .header .contact-with-us {
+        display: none;
+    }
+
+    .header .contact-panel {
+        width: 150px;
+    }
+}
+
+@media (max-width: 376px) {
+    .header .nav-menu {
+        display: none;
+    }
+}
+
 .section-promotional-packages {
     display: flex;
     margin-bottom: 89px;
@@ -115,6 +148,22 @@ a {
 
 .section-promotional-packages .packages-deskription {
     padding: 105.9px 129px 105.9px 0;
+}
+
+@media (max-width: 1024px) {
+    .section-promotional-packages {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-promotional-packages .packages-deskription {
+        padding: 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-promotional-packages {
+        margin-bottom: 20px;
+    }
 }
 
 h5 {
@@ -173,6 +222,26 @@ h5 {
     text-align: center;
     background: rgba(204, 142, 30, 0.1);
     margin: 16px auto 0;
+}
+
+@media (max-width: 769px) {
+    .section-packages .package-link {
+        font-size: 12px;
+    }
+
+    .section-packages .packages-wrapper {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-packages {
+        margin-bottom: 10px;
+    }
+
+    .section-packages .packages-wrapper {
+        flex-direction: column;
+    }
 }
 
 .section-promotional-offers .slider-form-wrapper {
@@ -340,6 +409,52 @@ h5 {
     color: #fff;
 }
 
+@media (max-width: 1024px) {
+    .section-promotional-offers .slider-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-promotional-offers .contact-form-wrapper {
+        width: 700px;
+    }
+}
+
+@media (max-width: 769px) {
+    .section-promotional-offers .slider {
+        width: 400px;
+    }
+
+    .section-promotional-offers .slider img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-promotional-offers .contact-form-wrapper {
+        width: 400px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-promotional-offers {
+        margin-bottom: 30px;
+    }
+
+    .section-promotional-offers .slider-wrapper {
+        width: 300px;
+    }
+
+    .section-promotional-offers .slider img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-promotional-offers .contact-form-wrapper {
+        width: 300px;
+    }
+}
+
 .section-price-list {
     margin-bottom: 147.3px;
 }
@@ -394,10 +509,29 @@ h5 {
     width: 197px;
 }
 
+@media (max-width: 769px) {
+    .section-price-list {
+        display: none;
+    }
+}
+
 .section-motto {
     display: flex;
     justify-content: center;
     margin-bottom: 160px;
+}
+
+@media (max-width: 376px) {
+    .section-motto {
+       margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .section-motto img {
+        max-width: 100%;
+    }
 }
 
 .section-map {
@@ -473,6 +607,12 @@ h5 {
     margin-top: 32.6px;
 }
 
+@media (max-width: 1024px) {
+    .section-map {
+        display: none;
+    }
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -526,4 +666,44 @@ h5 {
     flex-direction: column;
     gap: 15px;
     color: #cc8e1e;
+}
+
+@media (max-width: 1024px) {
+    .footer .footer-localization {
+        width: 170px;
+    }
+}
+
+@media (max-width: 769px) {
+    .footer {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    .footer {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .footer .copy-nav-wrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer .politic {
+        display: none;
+    }
+
+    .footer .links-row {
+        margin-bottom: 5px;
+    }
+
+    .footer .copyright {
+        width: 100%;
+    }
+
+    .footer .copyright img {
+        margin-top: 5px;
+    }
 }
